@@ -12,13 +12,10 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="Danhmuc col-lg-3 ">                    
-                <nav class="navbar navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <span class="navbar-toggler-icon" ></span>
-                        <p style="color:aliceblue">Danh mục sản phẩm <i class="fa-solid fa-caret-down"></i></p>
-                    </div>
-                </nav>
+            <div class="col-lg-3 ">     
+                <div id="nav">
+                    <p style="color:aliceblue"><span><i id="bar" class="fa-solid fa-bars"></i></span>Danh mục sản phẩm <i class="fa-solid fa-caret-down"></i></p>
+                </div>               
                 <div class="menu">
                     <ul>
                         <li><a href="#">Hoa quả nội</a></li>
@@ -26,32 +23,31 @@
                         <li><a href="#">Hoa quả theo mùa</a></li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Nhập nhóm hàng cần tìm" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                      </form>
+                        <input id="input_mn" class="form-control me-2" type="search" placeholder="Nhập nhóm hàng cần tìm" aria-label="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
             </div>
-            <div class="Trangchu col-lg-9 col-md-10 ">
+            <div class="Trangchu col-lg-9 col-md-10">
                 <header>
-                    <div class="thanhtc">
-                        <a href="#"><img src="" alt="" class="">logo</a>
-                        <form class="timkiem d-flex">
+                    <div class="thanhtc col-lg-9 col-md-10">
+                        <a href="#" id="logo">NUK</a>
+                        <form class="timkiem d-flex col-12">
                             <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm, bài viết" aria-label="Search" >
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <span class="btntk"><button class="btntk" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></span>
                         </form>
                         <button class="hotline">
-                            <i class="fa-solid fa-phone"></i>
+                            <i id="phone" class="fa-solid fa-phone"></i>
                             <ul>
                                 <li id="sdt">0583775442</li>
                                 <li id="hour">8h00-20h00</li>
                             </ul>
                         </button>
-                        <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-                        <a href="#"><button>Đăng nhập</button></a>
-                    </div>
+                        <a href="#"><i id="card" class="fa-solid fa-cart-plus"></i></a>
+                        <a href="#"><button id="login" >Đăng nhập</button></a>                    </div>
                 </header>
                 <main>
-                    <a href="home.html"><img scr="">logo sieu to</a>
+                    <a href="home.html"><img scr="" alt="Sao khong có ảnh??"></a>
                     <div class="row">
                         <div class="col-lg-1 col-3"><a href="" class=""><img src="" alt="" class="">Táo</a></div>
                         <div class="col-lg-1 col-3"><a href="" class=""><img src="" alt="" class="">Xoài</a></div>
@@ -225,52 +221,52 @@
                         
                     </div>
                 </main>
-                <footer >
-                    <ul class=" phuluc">
-                        <li class="col-lg-3 ">
-                            <h5>Về Hoa quả sạch</h5>
-                            <ul>
-                                <li><a href="#">Giới thiệu</a></li>
-                                <li><a href="#">Liên Hệ</a></li>
-                                <li><a href="#">Điều Khoản Dịch Vụ</a></li>
-                                <li><a href="#">Thương Hiệu</a></li>
-                                <li><a href="#">Blogs</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-lg-3 ">
-                            <h5>Hỗ trợ khách hàng</h5>
-                            <ul>
-                                <li><a href="#">Hướng dẫn mua hàng</a></li>
-                                <li><a href="#">Chính sách giao hàng</a></li>
-                                <li><a href="#">Chính sách đổi trả</a></li>
-                                <li><a href="#">Chính sách bảo mật</a></li>
-                                <li><a href="#">Chính sách hủy đơn</a></li>
-                                <li><a href="#">Câu hỏi thường gặp</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-lg-3 ">
-                            <h5>Sản Phẩm</h5>
-                            <ul>
-                                <li><a href="#">Hoa quả nhập khẩu</a></li>
-                                <li><a href="#">Hoa quả nội</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-lg-3 ">
-                            <h5>Chứng Nhận</h5>
-                            <ul>
-                                <li><a href="#">logo</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="diachi">
-                        <p>Công ty trách nhiệm hữu hạn 3ce</p>
-                        <p>Địa chỉ: Quận Thanh Xuân, TP Hà Nội</p>
-                        <p>Hotline: 0583775442</p>
-                        <p>Email: Nuk@gmail.com</p>
-
-                    </div>
-                </footer>
             </div>
+            <footer >
+                <ul class=" phuluc">
+                    <li class="col-lg-3 ">
+                        <h5>Về Hoa quả sạch</h5>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản Dịch Vụ</a></li>
+                            <li><a href="#">Thương Hiệu</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3 ">
+                        <h5>Hỗ trợ khách hàng</h5>
+                        <ul>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách giao hàng</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Chính sách hủy đơn</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3 ">
+                        <h5>Sản Phẩm</h5>
+                        <ul>
+                            <li><a href="#">Hoa quả nhập khẩu</a></li>
+                            <li><a href="#">Hoa quả nội</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3 ">
+                        <h5>Chứng Nhận</h5>
+                        <ul>
+                            <li><a href="#">logo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="diachi">
+                    <p>Công ty trách nhiệm hữu hạn 3ce</p>
+                    <p>Địa chỉ: Quận Thanh Xuân, TP Hà Nội</p>
+                    <p>Hotline: 0583775442</p>
+                    <p>Email: Nuk@gmail.com</p>
+
+                </div>
+            </footer>
         </div>
     </div>
 </body>
